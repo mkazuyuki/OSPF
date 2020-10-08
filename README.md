@@ -42,7 +42,7 @@ This document describes how to setup OSPF with EXPRESSCLUSTER.
 The cluster is configured by Node#1 and #2 which ECX is installed.
 
   1. FOG (FailOver Group) is started on Node#1
-  2. An Exec resource in the FOG (start.sh) remotely login to vRouter#1 and enable network I/F for VM by ifup command (Taht's the I/F which has 192.168.73.1 in the above diagram).
+  2. An Exec resource in the FOG (start.sh) remotely login to vRouter#1 and enable network I/F for VM by ifup command (That's the I/F which has 192.168.73.1 in the above diagram).
   3. vRouter#1 distributes the routing information for IP address of the VM to surrounding switches (SW#1, SW#2) by Quagga using OSPF protocol.
   4. VM become accessible to outer world and vice versa.
 
